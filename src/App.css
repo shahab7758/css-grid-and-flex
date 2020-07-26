@@ -1,0 +1,113 @@
+/* Flex design */
+/* 
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  text-align: center;
+  color: blue;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.wrapper > * {
+  margin-bottom: 1rem;
+}
+.a,
+.h {
+  flex-basis: 66%;
+}
+.c {
+  flex-basis: 100%;
+}
+.b,
+.d,
+.e,
+.f,
+.g {
+  flex-basis: 32%;
+}
+.a {
+  background-color: yellow;
+}
+.b {
+  background-color: bisque;
+}
+.c {
+  background-color: chartreuse;
+}
+.d {
+  background-color: coral;
+}
+.e {
+  background-color: chocolate;
+}
+.f {
+  background-color: darkcyan;
+}
+.g {
+  background-color: darkgrey;
+}
+.h {
+  background-color: palevioletred;
+} */
+
+/* /////////////////////////////////////////////////
+  ///////////// Grid Design ///////////////////////
+ ///////////////////////////////////////////////// */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.a,
+.h {
+  grid-column: span 2;
+}
+.c {
+  grid-column: span 3;
+}
+.a {
+  background-color: yellow;
+}
+.b {
+  background-color: bisque;
+}
+.c {
+  background-color: chartreuse;
+}
+.d {
+  background-color: coral;
+}
+.e {
+  background-color: chocolate;
+}
+.f {
+  background-color: darkcyan;
+}
+.g {
+  background-color: darkgrey;
+}
+.h {
+  background-color: palevioletred;
+}
+
+/* em VS rem 
+em is relevant to its parent box
+but rem is relevnt to root
+*/
+/* 
+h1 {
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+}
+p {
+  background-color: green;
+  color: white;
+  padding: 1rem;
+} */
